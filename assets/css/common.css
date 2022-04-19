@@ -1,0 +1,214 @@
+.loader-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.loader {
+    max-width: 15rem;
+    width: 100% !important;
+    height: 100% !important;
+    stroke-linecap: round;
+    margin: auto auto;
+}
+
+.loader circle {
+    fill: none;
+    stroke-width: 3.5;
+    -webkit-animation-name: preloader;
+    animation-name: preloader;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transform-origin: 170px 170px;
+    transform-origin: 170px 170px;
+    will-change: transform;
+}
+circle:nth-of-type(1) {
+    stroke-dasharray: 550;
+}
+circle:nth-of-type(2) {
+    stroke-dasharray: 500;
+}
+circle:nth-of-type(3) {
+    stroke-dasharray: 450;
+}
+circle:nth-of-type(4) {
+    stroke-dasharray: 300;
+}
+circle:nth-of-type(1) {
+    -webkit-animation-delay: -0.15s;
+    animation-delay: -0.15s;
+}
+circle:nth-of-type(2) {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+circle:nth-of-type(3) {
+    -webkit-animation-delay: -0.45s;
+    -moz-animation-delay:  -0.45s;
+    animation-delay: -0.45s;
+}
+circle:nth-of-type(4) {
+    -webkit-animation-delay: -0.6s;
+    -moz-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+
+@-webkit-keyframes preloader {
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader {
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.min-table-height {
+    min-height: 300px;
+}
+
+.vs__search{
+    line-height: 1.7 !important;
+}
+
+@media screen and (max-width: 575px) {
+    .vw-full {
+        width: 91vw;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .vw-full {
+        width: 96vw;
+    }
+}
+
+.max-height-70-vh{
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.datatable .form-check-input{
+    position: relative;
+}
+
+.quick-view {
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.quick-view .modal-content {
+    min-height: 100vh;
+}
+
+.dropdown-toggle::after {
+  border-top: 0px;
+}
+
+#sidebar-1 .b-sidebar-header button{
+  z-index: 9991;
+}
+
+#sidebar-1 .b-sidebar-header button svg{
+  color: #ffffff;
+}
+
+.width15rem{
+  width: 15rem;
+}
+
+.width15rem .b-sidebar{
+  width: 15rem !important;
+}
+
+.w-95{
+  width: 95%;
+}
+
+.z-index9991{
+  z-index: 9991;
+}
+
+.dragables-items {
+  /*position: relative;*/
+  /*width: 100%;*/
+  /*overflow-x: scroll;*/
+  /*overflow-y: hidden;*/
+  /*white-space: nowrap;*/
+  /*transition: all 0.2s;*/
+  /*transform: scale(0.98);*/
+  /*will-change: transform;*/
+  /*user-select: none;*/
+  cursor: pointer;
+  /*-ms-overflow-style: none;  !* IE and Edge *!*/
+  /*scrollbar-width: none;*/
+}
+
+/*.dragables-items::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
+
+.dragables-items.active {
+  /*background: rgba(255,255,255,0.3);*/
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  /*transform: scale(1);*/
+}
+
+tr.table-header{
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+}
+
+tr.debit td {
+  background-color: rgba(0,126,255,0.2);
+  color: #000000;
+}
+
+tr.debit:hover {
+  background-color: rgba(0,126,255,0.3);
+  color: #000000;
+  transition-duration: 0.5s;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+tr.credit td {
+  background-color: rgba(255,0,0,0.2);
+  color: #000000;
+}
+
+tr.credit:hover {
+  background-color: rgba(255,0,0,0.3);
+  color: #000000;
+  transition-duration: 0.5s;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+tr.normal td {
+  background-color: rgba(255,255,255,0.2);
+  color: #000000;
+}
+
+tr.normal:hover {
+  background-color: rgba(230,220,220,0.3);
+  color: #000000;
+  transition-duration: 0.5s;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+}
+
+.background-color-azure {
+  background-color: #f0ffff !important;
+}
